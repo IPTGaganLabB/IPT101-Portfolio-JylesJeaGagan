@@ -8,19 +8,22 @@ let studentInfo = {
 let courseEnrolled = [
     { course: "Integrative Programming", grade: 99 },
     { course: "App Dev", grade: 95 },
-    { course: "Networking 1", grade: 90 },
-    { course: "Event Driven Programming", grade: 88 }
+    { course: "Networking 1", grade: 94},
+    { course: "Event Driven Programming", grade: 95 },
+    { course: "Arts Appreciation", grade: 90 },
+    { course: "Science, Technology & Society", grade: 92 },
+    { course: "PathFit 4", grade: 95 },
 ];
 
-let totalGrade = courseEnrolled[0].grade + courseEnrolled[1].grade + courseEnrolled[2].grade + courseEnrolled[3].grade;
+let totalGrade = courseEnrolled[0].grade + courseEnrolled[1].grade + courseEnrolled[2].grade + courseEnrolled[3].grade + courseEnrolled[4].grade + courseEnrolled[5].grade + courseEnrolled[6].grade;
 let gwa = totalGrade / courseEnrolled.length;
 
 console.log("Student Name: " + studentInfo.studentName);
 console.log("Student ID: " + studentInfo.idNum);
 console.log("Year Level: " + studentInfo.yearLevel);
 console.log("Program: " + studentInfo.program);
-console.log("Courses Enrolled: " + courseEnrolled[0].course + ", " + courseEnrolled[1].course + ", " + courseEnrolled[2].course + ", " + courseEnrolled[3].course);
-console.log("Average Grade: " + gwa.toFixed(0));   // 0 so that it will not show decimals
+console.log("\n== Courses Enrolled: ==\n" + courseEnrolled[0].course + "\n" + courseEnrolled[1].course + "\n" + courseEnrolled[2].course + "\n" + courseEnrolled[3].course + "\n" + courseEnrolled[4].course + "\n" + courseEnrolled[5].course + "\n" + courseEnrolled[6].course);
+console.log("\nAverage Grade: " + gwa.toFixed(0));   // 0 so that it will not show decimals
 
 
 if (gwa >= 98) {
