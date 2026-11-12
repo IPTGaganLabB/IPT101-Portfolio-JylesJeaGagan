@@ -23,7 +23,7 @@ console.log("Student ID: " + studentInfo.idNum);
 console.log("Year Level: " + studentInfo.yearLevel);
 console.log("Program: " + studentInfo.program);
 console.log("\n== Courses Enrolled: ==\n" + courseEnrolled[0].course + "\n" + courseEnrolled[1].course + "\n" + courseEnrolled[2].course + "\n" + courseEnrolled[3].course + "\n" + courseEnrolled[4].course + "\n" + courseEnrolled[5].course + "\n" + courseEnrolled[6].course);
-console.log("\nAverage Grade: " + gwa.toFixed(0));   // 0 so that it will not show decimals
+console.log("\nAverage Grade: " + gwa.toFixed(0));   // 0 so that it will not show the decimals
 
 
 if (gwa >= 98) {
